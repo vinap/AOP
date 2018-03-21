@@ -1,9 +1,9 @@
-##Spring AOP Overview
+## Spring AOP Overview
 Most of the enterprise applications have some common crosscutting concerns that is applicable for different types of Objects and modules. Some of the common crosscutting concerns are logging, transaction management, data validation etc. In Object Oriented Programming, modularity of application is achieved by Classes whereas in Aspect Oriented Programming application modularity is achieved by Aspects and they are configured to cut across different classes.
 
 Spring AOP takes out the direct dependency of crosscutting tasks from classes that we can’t achieve through normal object oriented programming model. For example, we can have a separate class for logging but again the functional classes will have to call these methods to achieve logging across the application.
 
-##Aspect Oriented Programming Core Concepts
+## Aspect Oriented Programming Core Concepts
 Before we dive into implementation of Spring AOP implementation, we should understand the core concepts of AOP.
 
 
@@ -21,7 +21,7 @@ Before we dive into implementation of Spring AOP implementation, we should under
 
 **Weaving**: It is the process of linking aspects with other objects to create the advised proxy objects. This can be done at compile time, load time or at runtime. Spring AOP performs weaving at the runtime.
 
-##AOP Advice Types
+## AOP Advice Types
 Based on the execution strategy of advices, they are of following types.
 
 **Before Advice**: These advices runs before the execution of join point methods. We can use @Before annotation to mark an advice type as Before advice.
